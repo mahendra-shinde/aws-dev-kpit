@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+	<title>
+		AWS Notification demo (SNS)
+	</title>
+</head>
+<body>
+	<h1>AWS Simple Notification Service Demo</h1>
+	<div th:text="${result}"></div>
+	<div th:text="${messageId}"></div>
+	
+	<form action="/send" method="post">
+		Enter the message : <textarea cols="40" rows="5" name="msg"></textarea><br/>
+		<input type="submit" value="Send"/>
+	</form>
+</body>
+</html>
